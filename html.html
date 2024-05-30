@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Document Converter</h1>
+        <div class="converter">
+            <h2>Convert DOC to PDF</h2>
+            <input type="file" id="docToPdfInput" accept=".doc, .docx">
+            <button onclick="convertDocToPdf()">Convert</button>
+            <a id="docToPdfDownload" style="display:none;" download>Download PDF</a>
+        </div>
+        <div class="converter">
+            <h2>Convert PDF to DOC</h2>
+            <input type="file" id="pdfToDocInput" accept=".pdf">
+            <button onclick="convertPdfToDoc()">Convert</button>
+            <a id="pdfToDocDownload" style="display:none;" download>Download DOC</a>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
